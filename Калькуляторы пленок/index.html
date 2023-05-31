@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <div class="calculate">
+        <h2 class="calculate_title">Рассчет параметров стретч-пленки</h2>
+        <div class="calculate-wrapper">
+          <div class="calculate-wrapper_items" id="wrapper-meters">
+            <h3 class="calculate-wrapper_title">
+              Расчет
+              <span class="calculate-wrapper_color-text">метров</span> исходя из
+              веса:
+            </h3>
+            <p class="calculate-wrapper_subtitle">
+              Наиболее популярная ширина готовых <br />
+              рулонов <b>-500 мм</b>
+            </p>
+            <div class="calculate-wrapper_field">
+              <label class="calculate-wrapper_label">
+                Вес, кг
+                <input
+                  class="calculate-wrapper_input calculate-wrapper_input--color-first"
+                  type="number"
+                  id="weightForСalculateMeters"
+                  min="0"
+                  value="2"
+                />
+              </label>
+              <label class="calculate-wrapper_label">
+                Ширина, мм
+                <input
+                  class="calculate-wrapper_input"
+                  type="number"
+                  id="widthForСalculateMeters"
+                  min="0"
+                  value="500"
+                />
+              </label>
+              <label class="calculate-wrapper_label">
+                Толщина, мкм
+                <input
+                  class="calculate-wrapper_input"
+                  type="number"
+                  id="thicknessForСalculateMeters"
+                  min="0"
+                  value="17"
+                />
+              </label>
+              <label
+                class="calculate-wrapper_label calculate-wrapper_label--color"
+              >
+                Метраж, м
+                <input
+                  class="calculate-wrapper_input calculate-wrapper_input--color"
+                  type="text"
+                  id="сalculateMeters"
+                  min="0"
+                  readonly
+                  value="255.75"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="calculate-wrapper_items" id="wrapper-weight">
+            <h3 class="calculate-wrapper_title">
+              Расчет
+              <span class="calculate-wrapper_color-text">веса</span> исходя из
+              метража:
+            </h3>
+            <p class="calculate-wrapper_subtitle">
+              Наиболее популярная ширина готовых рулонов
+              <b class="calculate-wrapper_subtitle--b">-500 мм</b>
+            </p>
+            <div class="calculate-wrapper_field">
+              <label class="calculate-wrapper_label">
+                Метраж, м
+                <input
+                  class="calculate-wrapper_input calculate-wrapper_input--color-first"
+                  type="number"
+                  id="metersForСalculateWeight"
+                  min="0"
+                  value="255"
+                />
+              </label>
+              <label class="calculate-wrapper_label">
+                Ширина, мм
+                <input
+                  class="calculate-wrapper_input"
+                  type="number"
+                  id="widthForСalculateWeight"
+                  min="0"
+                  value="500"
+                />
+              </label>
+              <label class="calculate-wrapper_label">
+                Толщина, мкм
+                <input
+                  class="calculate-wrapper_input"
+                  type="number"
+                  id="thicknessForСalculateWeight"
+                  min="0"
+                  value="17"
+                />
+              </label>
+              <label
+                class="calculate-wrapper_label calculate-wrapper_label--color"
+              >
+                Вес, кг
+                <input
+                  class="calculate-wrapper_input calculate-wrapper_input--color"
+                  type="text"
+                  id="calculateWeight"
+                  min="0"
+                  readonly
+                  value="1.99"
+                />
+              </label>
+            </div>
+          </div>
+          <div class="calculate-wrapper_items" id="all-weight">
+            <h3 class="calculate-wrapper_title">
+              Расчет
+              <span class="calculate-wrapper_color-text">транспортных</span>
+              данных:
+            </h3>
+            <p class="calculate-wrapper_subtitle">
+              Наиболее популярная ширина готовых <br />
+              рулонов <b class="calculate-wrapper_subtitle--b">-500 мм</b>
+            </p>
+            <div class="calculate-wrapper_field">
+              <label class="calculate-wrapper_label">
+                Вес одного рулона,кг
+                <input
+                  class="calculate-wrapper_input calculate-wrapper_input--color-first"
+                  type="number"
+                  id="oneRollWeight"
+                  min="0"
+                  value="2"
+                />
+              </label>
+              <label class="calculate-wrapper_label">
+                Всего рулонов,шт
+                <input
+                  class="calculate-wrapper_input"
+                  type="number"
+                  id="totalRoll"
+                  min="6"
+                  value="6"
+                />
+              </label>
+              <label class="calculate-wrapper_label">
+                Итого коробов,шт
+                <input
+                  class="calculate-wrapper_input"
+                  type="number"
+                  id="totalBox"
+                  min="0"
+                  readonly
+                  value="1.00"
+                />
+              </label>
+              <label
+                class="calculate-wrapper_label calculate-wrapper_label--color"
+              >
+                Общий вес,кг
+                <input
+                  class="calculate-wrapper_input calculate-wrapper_input--color"
+                  type="text"
+                  id="totalWeight"
+                  min="0"
+                  value="12.20"
+                  readonly
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./calculate.js"></script>
+  </body>
+</html>
